@@ -26,17 +26,14 @@
     href="css/estilos.css">
 </head>
 <body>
-  <form name="forma">
+   <form name="forma">
     <mi-nav></mi-nav>
     <header>
       <h1>Alumno Nuevo</h1>
       <div class="herramientas">
-        <a
-          href="alumnos.html">
-          Cancelar</a>
-        <button type="submit">
-          Guardar
-        </button>
+        <a href="alumnos.html">Cancelar</a>
+        <button type="submit"> Guardar </button>
+        <button type="submit">Modificar</button> 
       </div>
     </header>
     <p>
@@ -48,9 +45,33 @@
     </p>
     <p>
       <label>
-        Nombre
+    Nombre
         <input name="nombre"
           type="text" required>
+      </label>
+    </p>
+    <!--Telefono-->
+    <p>
+      <label>
+      Telefono
+        <input name="telefono"
+          type="number" required>
+      </label>
+    </p>
+    <!--Grupo-->
+    <p>
+      <label>
+  Grupo
+        <input name="grupo"
+          type="text" required>
+      </label>
+    </p>
+    <!--Fecha-->
+    <p>
+      <label>
+        --Fecha--
+        <input name="fecha"
+          type="date" required>
       </label>
     </p>
     <mi-footer></mi-footer>
