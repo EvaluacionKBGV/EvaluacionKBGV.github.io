@@ -6,9 +6,32 @@
     content="width=device-width,
        initial-scale=1.0">
   <title>Sesión</title>
- <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
+  <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js">
+    </script>
+  <!--
+    Agrega el manejo de
+    autenticación.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js">
+    </script>
+  <!--
+    Agrega el manejo de bases de
+    datos.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js">
+    </script>
+  <!--
+    Configura la app usando la
+    información del sitio de
+    Firebase.
+  -->
   <script src="js/init.js">
   </script>
   <script type="module"
@@ -27,12 +50,12 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1><center>Sesión</center></h1>
+      <h1>Sesión</h1>
       <div class="herramientas">
         <button
           type="button"
           name="terminarSesión">
-            Terminar Sesión
+          Terminar Sesión
         </button>
       </div>
     </header>
@@ -60,7 +83,7 @@
     </p>
     <mi-footer></mi-footer>
   </form>
- <script type="module"
+  <script type="module"
     src="js/CtrlSesion.js">
     </script>
 </body>
